@@ -1,0 +1,12 @@
+﻿CREATE TABLE Articles
+(
+    ArticleId INT IDENTITY(1,1) PRIMARY KEY,
+
+    Title NVARCHAR(200) NOT NULL,
+
+    Content NVARCHAR(MAX) NOT NULL,
+
+    Tags NVARCHAR(500) NULL,
+
+    PublishedAt DATETIME2 NOT NULL
+);
